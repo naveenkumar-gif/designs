@@ -71,7 +71,7 @@ span {
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .img-box {
@@ -102,8 +102,11 @@ span {
   background-color: #156963;
 }
 /* ***************** */
+section {
+  padding-bottom: 3rem;
+}
 main {
-  padding: 2rem 4rem;
+  padding: 0rem 4rem;
 }
 .content {
   display: flex;
@@ -111,7 +114,7 @@ main {
   gap: 2rem;
 }
 .content-flex {
-  width: 65%;
+  width: 55%;
   display: flex;
   gap: 0.7rem;
   align-items: center;
@@ -131,7 +134,47 @@ main {
   line-height: 1;
 }
 .collection-para {
-  font-size: 0.5rem;
+  font-size: 0.55rem;
   color: #2c1500;
-  line-height: 1.4;
+  line-height: 1.5;
+}
+
+.Feature-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+select {
+  border: none;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+}
+figure {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.figure-box {
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.figure-para {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.figure-box:hover {
+  transform: translateY(-10px);
+  /* transform: scale(1.1); */
 }
