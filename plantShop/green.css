@@ -213,3 +213,37 @@ figure {
   width: 100%;
   height: 85%;
 }
+.flex-col-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(252, 249, 249);
+  padding: 5rem;
+  height: 50vh;
+}
+.flex-img {
+  width: 40%;
+  height: 40vh;
+}
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.grid-head {
+  width: 80%;
+  font-size: 2.5rem;
+  color: #2c1500;
+}
+
+.grid-link {
+  width: 20%;
+  display: inline;
+  text-align: center;
+  color: #fff;
+  background-color: #156963;
+  padding: 1rem;
+  border-radius: 2px;
+}
