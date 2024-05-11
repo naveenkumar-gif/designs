@@ -136,7 +136,7 @@
     align-items: center;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
   }
   .third-head {
     font-size: 2rem;
@@ -156,6 +156,10 @@
   }
   .hero-link-2 {
     font-size: 0.875rem;
+  }
+  .flex-img {
+    width: 70%;
+    height: 60vh;
   }
 }
 @media (max-width: 57.81em) {
@@ -188,6 +192,44 @@
     gap: 2rem;
   }
   .flex-col-3 {
+    gap: 2.5rem;
+  }
+  .testimonial {
+    gap: 3.5rem;
+  }
+}
+
+@media (max-width: 53.18em) {
+  .box-1 {
+    padding: 2.5rem;
+    width: 45%;
+  }
+  .box-2 {
+    width: 45%;
+    padding: 2.5rem;
+  }
+  .course-para p {
+    font-size: 0.875rem;
+  }
+  .hero-link-1 {
+    font-size: 0.75rem;
+  }
+  .hero-link-2 {
+    font-size: 0.75rem;
+  }
+  .primary-head {
+    font-size: 2rem;
+  }
+  .secondary-head {
+    font-size: 1.8rem;
+  }
+  .third-head {
+    font-size: 1.6rem;
+  }
+  .author-wrk {
+    font-size: 0.875rem;
+  }
+  .testimonial {
     gap: 2.5rem;
   }
 }

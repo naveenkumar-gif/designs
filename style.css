@@ -243,9 +243,15 @@ header {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* .grid-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  justify-content: space-between;
+} */
 .flex-img {
-  width: 50%;
-  height: 50vh;
+  width: 100%;
+  height: 50%;
   border-radius: 8px;
 }
 
