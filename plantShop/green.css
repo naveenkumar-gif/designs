@@ -39,7 +39,7 @@ body {
   line-height: 1;
 }
 .icon {
-  color: #156963;
+  color: #28c8bd;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -135,9 +135,21 @@ main {
   flex-wrap: wrap;
   border: 1px solid #e5e5e5;
   padding: 0.652rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.collection-flex:hover {
+  overflow: hidden;
+  background-color: #000;
+  color: #fff;
+  transform: translateX(10px);
+}
+.collection-para:hover {
+  color: #ddd;
 }
 .content-para {
-  color: #156963;
+  color: #28c8bd;
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1;
@@ -146,6 +158,7 @@ main {
   font-size: 0.7rem;
   color: #2c1500;
   line-height: 1.5;
+  transition: all 0.1s ease;
 }
 
 .Feature-flex {
@@ -166,14 +179,15 @@ figure {
   width: 100%;
   height: 50%;
   display: flex;
-  gap: 2rem;
+  /* gap: 2rem; */
   align-items: center;
   padding: 2rem 0;
+  justify-content: space-between;
 }
 
 .figure-box {
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: all 0.75s ease;
 }
 .figure-para {
   text-align: center;
@@ -258,12 +272,10 @@ footer {
 }
 
 .parent {
-  flex: 1 1 200px;
   display: flex;
   gap: 4rem;
   width: 90%;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 .child {
   display: flex;
