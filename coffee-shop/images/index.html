@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,13 +27,16 @@
           </li>
         </ul>
         <ul class="flex gap-4 max-md:hidden">
-          <li class="text-slate-400 text-lg">About</li>
-          <li class="text-slate-400 text-lg">Product</li>
-          <li class="text-slate-400 text-lg">Contact</li>
+          <a class="text-slate-400 text-lg" href="#About">About</a>
+
+          <a class="text-slate-400 text-lg" href="#Product">Product</a>
+
+          <a class="text-slate-400 text-lg" href="#Contact">Contact</a>
         </ul>
       </nav>
     </div>
     <header
+      id="About"
       class="px-12 py-12 flex flex-col gap-8 max-md:gap-4 max-md:px-8 max-md:py-8 max-sm:px-4 max-sm:py-4"
     >
       <div class="flex flex-col gap-4 justify-center items-center max-md:gap-3">
@@ -46,28 +49,37 @@
           Another line that highlights the unique value prop.
         </p>
       </div>
-      <div class="w-4/5 m-auto max-sm:w-full">
-        <img src="./Photos.png" alt="" class="w-full h-full" />
+      <div class="w-4/5 m-auto max-sm:w-full overflow-hidden">
+        <img
+          src="./Photos.png"
+          alt=""
+          class="w-full h-full transition-all duration-1000 hover:scale-110"
+        />
       </div>
       <div class="flex justify-center items-center gap-4 max-sm:flex-col">
         <button
-          class="bg-gray-300 px-12 py-2 rounded-lg max-sm:w-1/2 max-md:text-sm max-sm:flex-1"
+          class="bg-gray-300 px-12 py-2 rounded-lg max-sm:w-1/2 max-md:text-sm max-sm:flex-1 border border-gray-300 hover:bg-white transition-all duration-500"
         >
           Learn more
         </button>
         <button
-          class="bg-black px-12 py-2 text-white rounded-lg max-sm:w-1/2 max-md:text-sm"
+          class="bg-black px-12 py-2 text-white rounded-lg max-sm:w-1/2 max-md:text-sm transition-all duration-1000 hover:bg-gray-700"
         >
           sign up!!
         </button>
       </div>
     </header>
     <section
+      id="Product"
       class="px-12 py-12 flex gap-8 max-md:gap-4 max-md:px-8 max-md:py-8 max-sm:px-4 max-sm:py-4 max-md:flex-col max-sm:gap-6"
     >
       <aside class="flex flex-col gap-4">
-        <div class="max-md:w-4/5 max-md:m-auto">
-          <img src="./Photos (1).png" alt="" class="w-full h-full" />
+        <div class="max-md:w-4/5 max-md:m-auto overflow-hidden">
+          <img
+            src="./Photos (1).png"
+            alt=""
+            class="w-full h-full transition-all duration-1000 hover:scale-110"
+          />
         </div>
         <div class="flex flex-col gap-2 max-sm:gap-0">
           <h3
@@ -82,9 +94,13 @@
           </p>
         </div>
       </aside>
-      <aside class="flex flex-col gap-4">
+      <aside class="flex flex-col gap-4 overflow-hidden">
         <div class="max-md:w-4/5 max-md:m-auto">
-          <img src="./Photos (2).png" alt="" class="w-full h-full" />
+          <img
+            src="./Photos (2).png"
+            alt=""
+            class="w-full h-full transition-all duration-1000 hover:scale-110"
+          />
         </div>
         <div class="flex flex-col gap-2 max-sm:gap-0">
           <h3
@@ -100,8 +116,12 @@
         </div>
       </aside>
       <aside class="flex flex-col gap-4">
-        <div class="max-md:w-4/5 max-md:m-auto">
-          <img src="./Photos (3).png" alt="" class="w-full h-full" />
+        <div class="max-md:w-4/5 max-md:m-auto overflow-hidden">
+          <img
+            src="./Photos (3).png"
+            alt=""
+            class="w-full h-full transition-all duration-1000 hover:scale-110"
+          />
         </div>
         <div class="flex flex-col gap-2 max-sm:gap-0">
           <h3
@@ -118,6 +138,7 @@
       </aside>
     </section>
     <section
+      id="Product"
       class="px-12 py-12 flex flex-col gap-8 max-md:gap-4 max-md:px-8 max-md:py-8 max-sm:px-4 max-sm:py-4"
     >
       <div class="flex flex-col gap-4 justify-center items-center max-md:gap-3">
@@ -130,7 +151,9 @@
           Another line that highlights the unique value prop.
         </p>
       </div>
-      <div class="flex justify-between items-center max-md:flex-wrap">
+      <div
+        class="grid grid-cols-6 place-items-center gap-4 max-lg:grid-cols-3 max-lg:place-items-center max-md:grid-cols-2 max-md:place-items-center"
+      >
         <span>
           <ion-icon
             name="logo-facebook"
@@ -169,5 +192,31 @@
         </span>
       </div>
     </section>
+    <footer
+      id="Contact"
+      class="px-12 py-12 max-md:gap-4 max-md:px-8 max-md:py-8 max-sm:px-4 max-sm:py-4 h-[100%] bg-black"
+    >
+      <div
+        class="container flex items-center justify-between gap-8 max-md:flex-col max-md:items-start max-md:justify-start"
+      >
+        <div class="text-white w-1/2">
+          <h2 class="text-3xl font-semibold">Contact</h2>
+          <p class="text-sm">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A
+            accusantium perferendis maiores repellendus possimus animi
+            repudiandae temporibus ab, praesentium voluptate voluptates, vero
+            earum quo exercitationem aliquid esse optio quidem saepe.
+          </p>
+        </div>
+        <div class="text-white">
+          <ul class="flex flex-col gap-2">
+            <li>FACEBOOK</li>
+            <li>INSTAGRAM</li>
+            <li>WHATSAPP</li>
+            <li>TWITTER</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
